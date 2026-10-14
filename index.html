@@ -135,6 +135,14 @@ summary:hover h3{color:#a9c8ee}
 .cols .col:nth-child(3){background:#f5d6d2}
 .cols .col h3{margin-bottom:14px}
 .cols .col li{color:var(--brown);padding:9px 0;border-top:1px solid rgba(74,52,41,.25);font-size:16px}
+.sheet{overflow-x:hidden}
+.cards,.case-body{grid-template-columns:minmax(0,1fr)}
+.wc,.case-body>*,.case-body figure{min-width:0}
+.steps{grid-template-columns:repeat(3,minmax(0,1fr))}
+.split{grid-template-columns:minmax(180px,300px) minmax(0,1fr)}
+.shots{max-width:100%}
+.wc li a span{min-width:0;overflow-wrap:anywhere}
+@media(max-width:700px){.steps,.split{grid-template-columns:minmax(0,1fr)}}
 .edu{border-top:1px solid rgba(74,52,41,.3);padding:20px 0;display:grid;grid-template-columns:1fr 2fr;gap:12px}
 .edu h3{font-family:var(--serif);font-weight:400;font-size:26px;letter-spacing:-.02em;line-height:1.15}
 .edu p{font-size:16px}
